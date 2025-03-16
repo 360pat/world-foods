@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Foods - French</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #f4f4f4;
+            min-height: 100vh; /* Ensure body takes full viewport height */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between; /* Space between title and logo */
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            height: 40px;
+            margin-left: 10px; /* Add space between logo and title */
+        }
+        .main-container {
+            display: flex;
+            flex: 1; /* Ensure main container takes remaining space */
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            position: relative; /* For positioning the randomizer button */
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 100vh; /* Full viewport height */
+            position: sticky; /* Optional: Makes sidebar stick while scrolling */
+            top: 0; /* Optional: Stick to the top */
+        }
+        .sidebar nav {
+            margin-top: 20px;
+        }
+        .sidebar nav a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin: 15px 0;
+            font-weight: bold;
+            position: relative; /* Needed for bullet positioning */
+            padding-left: 20px; /* Space for the bullet */
+        }
+        .sidebar nav a::before {
+            content: "•"; /* Bullet point */
+            position: absolute;
+            left: 0; /* Position the bullet */
+            color: #fff; /* Bullet color */
+            font-size: 18px; /* Bullet size */
+        }
+        .culture-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .culture-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 31%;
+            text-align: center;
+            padding: 40px 20px; /* Increased padding to make boxes taller */
+            box-sizing: border-box;
+            text-decoration: none; /* Remove underline from links */
+            color: inherit; /* Inherit text color */
+            height: 250px; /* Set a fixed height for the boxes */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+        }
+        .culture-box h2 {
+            margin-top: 0;
+        }
+        .culture-box p {
+            color: #555;
+        }
+        .randomizer-button {
+            position: absolute; /* Position the button absolutely */
+            top: 20px; /* Align to the top */
+            right: 20px; /* Align to the right */
+        }
+        .randomizer-button button {
+            background-color: #ff6347; /* Tomato color for the button */
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .randomizer-button button:hover {
+            background-color: #ff4500; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 100px">World foods</h1>
+        <div class="logo">
+            <img src="logo.jpeg" alt="World Foods Logo" style="width:200px;height:150px;">
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="main-content">
+            <!-- Randomizer Button -->
+            <div class="randomizer-button">
+                <button>Randomizer</button>
+            </div>
+            <div class="culture-container">
+                <!-- French Culture Box -->
+                <a href="french.html" class="culture-box">
+                    <h2>Onion<br>soup</h2>
+                    <p>Explore the rich and diverse flavors of French cuisine.</p>
+                </a>
+                <!-- Mexican Culture Box -->
+                <a href="mexican.html" class="culture-box">
+                    <h2>Chicken<br>confit</h2>
+                    <p>Discover the vibrant and spicy dishes of Mexico.</p>
+                </a>
+                <!-- Italian Culture Box -->
+                <a href="italian.html" class="culture-box">
+                    <h2>Italian</h2>
+                    <p>Enjoy the beautiful sight of Italian dining.</p>
+                </a>
+                <!-- Japanese Culture Box -->
+                <a href="japanese.html" class="culture-box">
+                    <h2>Japanese</h2>
+                    <p>Experience the delicate and refined tastes of Japanese cuisine.</p>
+                </a>
+                <!-- Indian Culture Box -->
+                <a href="indian.html" class="culture-box">
+                    <h2>Indian</h2>
+                    <p>Savor the rich and aromatic flavors of Indian dishes.</p>
+                </a>
+                <!-- Thai Culture Box -->
+                <a href="thai.html" class="culture-box">
+                    <h2>Thai</h2>
+                    <p>Enjoy the bold and harmonious flavors of Thai food.</p>
+                </a>
+                <!-- Chinese Culture Box -->
+                <a href="chinese.html" class="culture-box">
+                    <h2>Chinese</h2>
+                    <p>Dive into the diverse and flavorful world of Chinese cuisine.</p>
+                </a>
+                <!-- Greek Culture Box -->
+                <a href="greek.html" class="culture-box">
+                    <h2>Greek</h2>
+                    <p>Relish the fresh and Mediterranean flavors of Greek dishes.</p>
+                </a>
+                <!-- Spanish Culture Box -->
+                <a href="spanish.html" class="culture-box">
+                    <h2>Spanish</h2>
+                    <p>Indulge in the vibrant and hearty flavors of Spanish cuisine.</p>
+                </a>
+            </div>
+        </div>
+        <div class="sidebar">
+            <nav>
+                <a href="cultures.html"><h1>Cultures</h1></a>
+                <a href="dishes.html"><h1>Dishes</h1></a>
+                <a href="ingredients.html"><h1>Ingredients</h1></a>
+                <a href="history.html"><h1>History</h1></a>
+                <a href="basket.html"><h1>Basket</h1></a>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
