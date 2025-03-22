@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Foods - french - Onion soup</title>
+    <style>
+        body {
+            scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            height: 40px;
+            margin-left: 10px;
+        }
+        .main-container {
+            display: flex;
+            flex: 1;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            position: relative;
+            background-image: url("bg_img.jpg");
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+        }
+        .sidebar nav {
+            margin-top: 20px;
+        }
+        .sidebar nav a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin: 15px 0;
+            font-weight: bold;
+            position: relative;
+            padding-left: 20px;
+        }
+        .sidebar nav a::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #fff;
+            font-size: 18px;
+        }
+        .content-section {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            padding: 20px;
+            text-align: left;
+            width: 15%;
+        }
+		.content-section-desc {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0px 0;
+            padding: 10px;
+            text-align: left;
+            width: 99%;
+        }
+        .content-section h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .content-section p {
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1 style="font-size: 75px">Onion soup |</h1>
+    <h1 style="font-size: 50px">
+        <a href="#Ingredients" style="margin-right: 40px;">Ingredients</a>
+        <a href="#Recipe" style="margin-right: 40px;">Recipe</a>
+        <a href="#History">History</a>
+    </h1>
+        <div class="logo">
+            <img src="logo.png" alt="World Foods Logo" style="width:150px;height:150px;">
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="main-content">
+			<div class="content-section-desc">
+                <div id="Description"></div>
+                <p><b>Description - </b>his iconic French dish takes 15 minutes to prepare and around 45 minutes of cooking time totaling in 55 total minutes. It makes 4 servings each at around 580 calories per serving </p>
+            </div>
+            <div class="content-section">
+                <div id="Ingredients"></div>
+                <h2>Ingredients</h2>
+                <ul>
+					<li>2 tablespoons olive oil</li>
+					<li>400g sliced onions</li>
+					<li>1190ml beef broth</li>
+					<li>2 tablespoons dry sherry (optional)</li>
+					<li>1 teaspoon dried thyme</li>
+					<li>1 pinch salt and pepper to taste</li>
+					<li>4 slices French bread</li>
+					<li>4 slices provolone cheese</li>
+					<li>2 slices Swiss cheese, diced</li>
+					<li>22g grated Parmesan cheese</li>
+				</ul>
+            </div>
+			
+            <div class="content-section">
+			<div id="Recipe"></div>
+            <h2>Recipe</h2>
+			<ol>
+				<li>Melt butter with olive oil in a pot over medium heat.</li>
+				<li>Add onions to butter and continually stir until tender and translucent. You do not want to brown the onions.</li>
+				<li>Add beef broth, sherry, and thyme, then season with salt and pepper.</li>
+				<li>Let simmer for 30 minutes. Meanwhile, preheat the oven's broiler.</li>
+				<li>Ladle soup into oven-safe serving bowls and place one slice of bread on top of each (bread may be broken into pieces if you prefer).</li>
+				<li>Layer each slice of bread with a slice of provolone, 1/2 slice diced Swiss, and a quarter of the Parmesan cheese.</li>
+				<li>Place bowls on a cookie sheet and broil in the preheated oven until cheese bubbles and browns slightly, which is at roughly 2 to 3 minutes.</li>
+			</ol>
+            </div>
+			
+            <div class="content-section-desc">
+                <h2>History</h2>
+                <p>Onion soups have been popular at least since Roman times. Onions, a widely grown and generally inexpensive vegetable, were very familiar to the French. In the book, Mastering the Art of French Cooking, it is said "It is hard to imagine a civilization without onions". In general, the onion was actually regarded as peasant food and the upper classes avoided it; in the middle of the 18th century a cookery book by the head chef to a French prince included a recipe for "peasant-style onion soup" – known as ‘soupe à l'oignon à la Paysanne’. The dish is popular throughout France and "apparently no region lays particular claim to it". 
+Although onions were plentiful and affordable by the poor, a medieval recipe in Le Ménagier de Paris, published in 1393, includes among its ingredients ginger and saffron – rare and expensive spices – making this version of the dish one for wealthy households. According to some sources, onion soup was introduced to the royal court at Versailles in the 18th century after Louis XV’s father-in-law, the exiled Polish King Stanislas, enjoyed it at an inn and insisted on learning the recipe. It consisted of three main ingredients: fried onions, water and croutons. A recipe in the Dictionnaire des alimens, vins et liqueurs, published during Louis XV's reign, is similar, but adds "a spoonful of good lean broth" before serving. From this we can see the similarities to today’s version, despite the 300-year difference. 
+The modern version of French onion soup dates from the mid 1800’s, in Les Halles, the large open-air market in Paris. The restaurants around the market served the soup with a substantial topping of grated cheese and put under a grill.  
+In Britain, a recipe for French onion soup was printed in The Cook and Housewife's Manual, published in Edinburgh in 1827. While similar to the modern version, the onions were gently cooked and then simmered in veal stock. The dish was introduced to the United States in 1861 in a New York restaurant. More papers in Britain began giving recipes described as "French onion soup" in the 1880s, but the cooking liquid was either milk or water thickened with flour, and no cheese, crouton or gratinating was specified. In the first half of the 20th century onion soup bars became popular in London, around Piccadilly Circus, staying open all night to sell onion soup to late-night party-goers. </p>
+            </div>
+			<div id="History"></div>
+        </div>
+        <div class="sidebar">
+            <nav>
+                <a href="cultures.html"><h1>Cultures</h1></a>
+                <a href="dishes.html"><h1>Dishes</h1></a>
+                <a href="ingredients.html"><h1>Ingredients</h1></a>
+                <a href="history.html"><h1>History</h1></a>
+                <a href="basket.html"><h1>Basket</h1></a>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
